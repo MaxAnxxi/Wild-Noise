@@ -1,10 +1,62 @@
+/* typo */
+@font-face {
+    font-family: "NotoSansMono";
+    src: url(assets/fonts/NotoSansMono-VariableFont_wdth.ttf) format("opentype");
+}
+
+
+
+/* global */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+:root {
+    --main-color-green: #D4EED3;
+    --secondary-color-grey : #97ABB1;
+    --third-color-yellow : #EDEBA0;
+
+    --main-typo : "NotoSansMono";
+}
+
 body {
     background-color: #746F72;
 }
 
-h2 {
-    color: #D4EED3;
+h1, h2, h3 {
+    font-family: var(--main-typo);
+    font-weight: bold;
 }
+
+h1 {
+    color: black;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h2, h3 {
+    color: var(--main-color-green);
+}
+
+p, li, button, a {
+    font-family: var(--main-typo);
+    color: black;
+}
+
+p, button, a {
+    font-size: 1em;
+}
+
+/* header  */
+
+
 
 
 .box {
