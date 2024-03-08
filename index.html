@@ -11,30 +11,22 @@
 </head>
 
 <body>
-    <header>
-        <div id="wildtitle"><img src="assets/images/wildNoise_logo.png" alt="logo wild noise" width="8%"/>
-        <h1>WILD NOISE</h1>
-    </div>
-        <nav><ul>
-            <li>Règles</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-        </nav>
-    </header>
 
-        <main>
-
-
-    <h2>Welcome</h2>
-
-
+    <main>
+        <h2>Welcome</h2>
+        <section class="box">
+            <article>
+                <form class="pseudo">
+                    <label for="pseudo">Who are you?</label>
+                    <input type="text" name="message" id="pseudo">
+                    <span id="messageErreur"></span>
+                    <button type="button" onclick="afficherBienvenue()">Valider</button>
+                </form>
+                <script src="script.js"> playername(pseudo) </script>
+            </article>
+        </section>
 
     </main>
-
-    <footer>
-        <p>Copyright</p>
-    </footer>
 </body>
 
 </html>
