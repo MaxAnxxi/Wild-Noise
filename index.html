@@ -5,24 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta type="description" content="An audio quizz about Wild Animals">
-    <link type="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link type="script" href="script.js">
     <title>Wild Noise</title>
 </head>
 
 <body>
 
+    <main>
+        <h2>Welcome</h2>
+        <section class="box">
+            <article>
+                <form class="pseudo">
+                    <label for="pseudo">Who are you?</label>
+                    <input type="text" name="message" id="pseudo">
+                    <span id="messageErreur"></span>
+                    <button type="button" onclick="afficherBienvenue()">Valider</button>
+                </form>
+                <script src="script.js"> playername(pseudo) </script>
+            </article>
+        </section>
 
-    <h2>Welcome</h2>
-
-
-
-
-
-
-        <main>
-
-        </main>
+    </main>
 </body>
 
 </html>
