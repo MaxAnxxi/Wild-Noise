@@ -22,8 +22,9 @@
     --main-typo : "NotoSansMono";
 }
 
-body {
+main {
     background-color: #746F72;
+    padding: 1em;
 }
 
 h1, h2, h3 {
@@ -56,9 +57,35 @@ p, button, a {
 
 /* header  */
 
+header {
+    background-color: var(--main-color-green);
+    padding: 1em;
+}
+
+#avatar {
+    height: 8em;
+}
+
+#avatartitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 2em;
+
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
 
 
-
+/* formulaire */
 .box {
     background-color: #97ABB1;
     border-radius: 50px;
@@ -80,3 +107,50 @@ input {
     font-size: 10px;
     margin-left: 25px;
 }
+
+
+/* footer */
+footer {
+    background-color: var(--main-color-green);
+}
+
+footer p {
+    margin: auto;
+    text-align: center;
+    padding: 0.5em;
+}
+
+
+
+/* /////////////////////////////////meadia screen reponsive////////// */
+
+@media screen and (min-width: 822px) {
+    
+/* global */
+
+h1 {
+    font-size: 3em;
+}
+
+/* header */
+
+#avatartitle {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+nav ul {
+    justify-content: flex-end;
+}
+
+nav li {
+    padding: 1em;
+}
+
+
+#avatar {
+    height: 11em;
+}
+
+}
+    
