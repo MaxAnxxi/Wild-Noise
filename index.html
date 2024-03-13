@@ -7,28 +7,43 @@
     <meta type="description" content="An audio quizz about Wild Animals">
     <link rel="stylesheet" href="style.css">
     <link type="script" href="script.js">
-    <title>Wild Noise</title>
+    <title>Quizz Wild Noise</title>
 </head>
 
 <body>
+    
+    <header>
+        <div id="avatartitle">
+            <img src="assets/images/wildNoise_logo.png" alt="logo wild noise" id="avatar"/>
+            <h1>QUIZZ <br>
+                WILD NOISE</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li>Rules</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+    </header>
 
     <main>
         <h2>Welcome</h2>
-        <section class="box">
-            <article>
-                <form class="pseudo">
-                    <label for="pseudo">Who are you?</label>
+        <section>
+            <article class="box">
+                <form>
+                    <p>Who are you?</p>
                     <input type="text" name="message" id="pseudo">
                     <span id="messageErreur"></span>
-                    <button type="button" onclick="afficherBienvenue()">Valider</button>
+                    <button class="buttonstart" type="button" onclick="afficherBienvenue()">Start</button>
                 </form>
                 <script src="script.js"> playername(pseudo) </script>
             </article>
         </section>
+        <h2>Quizz</h2>
         <section id="article">
-
-            <h3>Quizz</h3>
-
             <article id="quizz">
                 <h4>Guess the animal!</h4>
                 <div id="quizz-hedgehog">
@@ -57,7 +72,24 @@
                 </ul>
             </article>
         </section>
+
+        <h2>Result</h2>
+
+        <section>
+            <article class="result">
+                <h3>Well done playername!</h3>
+                <span id="scoreFinal">points</span>
+                <button class="buttontryagain" type="button" onclick="afficherBienvenue()">Try Again</button>
+            </article>
+        </section>
+
     </main>
+    <script src="script.js"></script>
+
 </body>
+
+<footer>
+    <p>copyright</p>
+</footer>
 
 </html>
