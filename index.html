@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta type="description" content="An audio quizz about Wild Animals">
+    <meta name="description" content="An audio quizz about Wild Animals">
     <link rel="stylesheet" href="style.css">
-    <link type="script" href="script.js">
+    <link rel="script" href="timerSlide.js">
     <title>Quizz Wild Noise</title>
 </head>
 
 <body>
-    
+
     <header>
         <div id="avatartitle">
-            <img src="assets/images/wildNoise_logo.png" alt="logo wild noise" id="avatar"/>
+            <img src="./assets/images/wildNoise_logo.png" alt="logo-wild-noise" id="avatar">
             <h1>QUIZZ <br>
                 WILD NOISE</h1>
         </div>
@@ -31,64 +31,65 @@
 
     <main>
         <h2>Welcome</h2>
-        <section id="form">
-            <article class="box">
+        <div id="form">
+            <div class="box">
                 <form>
                     <p>Who are you?</p>
                     <input type="text" name="message" id="pseudo">
                     <span id="messageErreur"></span>
                     <button class="buttonstart" type="button" onclick="afficherBienvenue()">Start</button>
                 </form>
-            </article>
-        </section>
+            </div>
+        </div>
         <h2>Quizz</h2>
-        <section id="article">
-            <article id="quizz">
-                <h4>Guess the animal!</h4>
-                <div id="quizz-hedgehog">
+        <div id="article">
+            <div id="hedgehog">
+                <article id="quizz">
+                    <h4>Guess the animal!</h4>
+                    <div id="quizz-hedgehog">
 
-                    <audio src="./assets/audio/ANMLMisc_Cri d un jeune herisson (ID 0941)_LS.mp3" type="audio/mp3"
-                        controls id="audio-hedgehog"></audio>
-                    <button id="answer-hedgehog" type="button" class="button-quizz">Hedgehog</button>
-                    <button id="answer-squirrel" type="button" class="button-quizz">Squirrel</button>
-                    <button id="answer-hamster" type="button" class="button-quizz">Hamster</button>
-                    <button id="answer-beaver" type="button" class="button-quizz">Beaver</button>
-                    <script src="timerSlide.js"></script>
+                        <audio src="./assets/audio/hedgehog.mp3" controls id="audio-hedgehog"></audio>
+                        <button id="answer-hedgehog" type="button" class="button-quizz">Hedgehog</button>
+                        <button id="answer-squirrel" type="button" class="button-quizz">Squirrel</button>
+                        <button id="answer-hamster" type="button" class="button-quizz">Hamster</button>
+                        <button id="answer-beaver" type="button" class="button-quizz">Beaver</button>
+                        <script src="timerSlide.js"></script>
+                    </div>
+                </article>
+                <div id="description-hedgehog">
+                    <img id="img-hedgehog" alt="hedgehog" src="./assets/images/hedgehog-3703244_1280.jpg">
+                    <ul id="text-hedgehog">
+                        <li>
+                            <p>Hedgehog</p>
+                        </li>
+                        <li>
+                            <p>Mammal</p>
+                        </li>
+                        <li>
+                            <p>They would be great at triathlon, if you switched cycling for climbing : Hedgehogs are
+                                good
+                                runners, proficient climbers and can even swim</p>
+                        </li>
+                    </ul>
                 </div>
-            </article>
-            <article id="description">
-                <img id="img-hedgehog" alt="hedgehog" src="./assets/images/hedgehog-3703244_1280.jpg" />
-                <ul id="description-hedgehog">
-                    <li>
-                        <p>Hedgehog</p>
-                    </li>
-                    <li>
-                        <p>Mammal</p>
-                    </li>
-                    <li>
-                        <p>They would be great at triathlon, if you switched cycling for climbing : Hedgehogs are good
-                            runners, proficient climbers and can even swim</p>
-                    </li>
-                </ul>
-            </article>
-        </section>
+            </div>
+        </div>
 
         <h2>Result</h2>
 
-        <section>
+        <div>
             <article class="result">
                 <h3>Well done playername!</h3>
                 <span id="scoreFinal">points</span>
                 <button class="buttontryagain" type="button" onclick="afficherBienvenue()">Try Again</button>
             </article>
-        </section>
+        </div>
 
     </main>
+    <footer>
+        <p>copyright</p>
+    </footer>
 
 </body>
-
-<footer>
-    <p>copyright</p>
-</footer>
 
 </html>
