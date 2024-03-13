@@ -39,7 +39,6 @@
                     <span id="messageErreur"></span>
                     <button class="buttonstart" type="button" onclick="afficherBienvenue()">Start</button>
                 </form>
-                <script src="script.js"> playername(pseudo) </script>
             </article>
         </section>
         <h2>Quizz</h2>
@@ -50,10 +49,11 @@
 
                     <audio src="./assets/audio/ANMLMisc_Cri d un jeune herisson (ID 0941)_LS.mp3" type="audio/mp3"
                         controls id="audio-hedgehog"></audio>
-                    <button id="answer-hedgehog" type="button">Hedgehog</button>
-                    <button id="answer-squirrel" type="button">Squirrel</button>
-                    <button id="answer-hamster" type="button">Hamster</button>
-                    <button id="answer-beaver" type="button">Beaver</button>
+                    <button id="answer-hedgehog" type="button" class="button-quizz">Hedgehog</button>
+                    <button id="answer-squirrel" type="button" class="button-quizz">Squirrel</button>
+                    <button id="answer-hamster" type="button" class="button-quizz">Hamster</button>
+                    <button id="answer-beaver" type="button" class="button-quizz">Beaver</button>
+                    <script src="timerSlide.js"></script>
                 </div>
             </article>
             <article id="description">
@@ -84,7 +84,6 @@
         </section>
 
     </main>
-    <script src="script.js"></script>
 
 </body>
 
