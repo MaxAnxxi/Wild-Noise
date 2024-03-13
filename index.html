@@ -7,27 +7,28 @@
     <meta type="description" content="An audio quizz about Wild Animals">
     <link rel="stylesheet" href="style.css">
     <link type="script" href="script.js">
-    <title>Wild Noise</title>
+    <title>Quizz Wild Noise</title>
 </head>
 
 <body>
 
     <main>
         <h2>Welcome</h2>
-        <section class="box">
-            <article>
-                <form class="pseudo">
-                    <label for="pseudo">Who are you?</label>
+        <section>
+            <article class="box">
+                <form>
+                    <p>Who are you?</p>
                     <input type="text" name="message" id="pseudo">
                     <span id="messageErreur"></span>
-                    <button type="button" onclick="afficherBienvenue()">Valider</button>
+                    <button class="buttonstart" type="button" onclick="afficherBienvenue()">Start</button>
                 </form>
                 <script src="script.js"> playername(pseudo) </script>
             </article>
         </section>
+
         <section id="article">
 
-            <h3>Quizz</h3>
+            <h2>Quizz</h2>
 
             <article id="quizz">
                 <p>Guess the animal!</p>
@@ -42,11 +43,24 @@
                 </div>
             </article>
             <article>
-                <img id="img-hedgehog" alt="hedgehog" src="./assets/hedgehog-3703244_1280.jpg" />
+                <img id="img-hedgehog" alt="hedgehog" src=" " />
                 <p id="description-hedgehog"></p>
             </article>
         </section>
+
+        <h2>Result</h2>
+
+        <section>
+            <article class="result">
+                <h3>Well done playername!</h3>
+                <span id="scoreFinal">points</span>
+                <button class="buttontryagain" type="button" onclick="afficherBienvenue()">Try Again</button>
+            </article>
+        </section>
+
     </main>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
