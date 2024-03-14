@@ -74,7 +74,6 @@ a {
 }
 
 
-
 /* header  */
 
 header {
@@ -111,15 +110,33 @@ nav ul {
     width: 75%;
 }
 
-.box {
+#label {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.champ {
+    font-family: var(--main-typo);
+    font-weight: bold;
+    text-align: center;
+}
+
+.box,
+#formrep {
     background-color: var(--secondary-color-grey);
     border-radius: 1.5rem;
-    height: 4em;
+    height: 5em;
+    width: 10em;
     max-width: 25em;
-    margin: auto;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-
+    gap: 0.5em;
+    font-family: var(--main-typo);
+    font-weight: bold;
 }
 
 form {
@@ -129,9 +146,9 @@ form {
 
 input {
     background-color: var(--main-color-green);
-    border-radius: 5em;
+    border-radius: 0.5em;
     border: none;
-    width: 10em;
+    width: 8em;
     height: 2em;
     margin-left: 2em;
     margin-right: 2em;
@@ -302,12 +319,24 @@ footer p {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        gap: 5em;
     }
 
     /* global */
 
-    input {
-        width: 10em;
+    #formrep {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box {
+        display: flex;
+        min-width: 20em;
+    }
+
+    label {
+        min-width: 7.5em;
+        width: 15em;
     }
 
     h1 {
