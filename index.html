@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="An audio quizz about Wild Animals">
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="timerSlide.js">
     <title>Quizz Wild Noise</title>
 </head>
 
 <body>
-
     <header>
         <div id="avatartitle">
             <img src="./assets/images/wildNoise_logo.png" alt="logo-wild-noise" id="avatar">
@@ -31,16 +29,18 @@
 
     <main>
         <h2>Welcome</h2>
-        <div id="form">
-            <div class="box">
+        <section>
+            <h3 id="label">Who are you?</h3>
+            <article class="box">
                 <form>
-                    <p>Who are you?</p>
-                    <input type="text" name="message" id="pseudo">
-                    <span id="messageErreur"></span>
-                    <button class="buttonstart" type="button" onclick="afficherBienvenue()">Start</button>
+                    <div id="name"></div>
+                    <div id="formrep">
+                        <input type="text" name="pseudo" class="champ" id="pseudo">
+                        <button id="myButton" class="buttonstart" type="button">Start</button>
+                    </div>
                 </form>
-            </div>
-        </div>
+            </article>
+        </section>
         <h2>Quizz</h2>
         <div id="article">
             <div id="hedgehog">
@@ -49,12 +49,18 @@
                     <div id="quizz-hedgehog">
 
                         <audio src="./assets/audio/hedgehog.mp3" controls id="audio-hedgehog"></audio>
-                        <button id="answer-hedgehog" type="button" class="button-quizz">Hedgehog</button>
+                        <button id="answer-hedgehog" type="button" class="button-quizz" data-rep="correct">Hedgehog</button>
                         <button id="answer-squirrel" type="button" class="button-quizz">Squirrel</button>
                         <button id="answer-hamster" type="button" class="button-quizz">Hamster</button>
                         <button id="answer-beaver" type="button" class="button-quizz">Beaver</button>
                     </div>
-                </article>
+                    <script src="javascript/trueFalse.js">
+
+                </script>
+
+
+
+            </article>
                 <div id="description-hedgehog">
                     <img id="img-hedgehog" alt="hedgehog" src="./assets/images/hedgehog-3703244_1280.jpg">
                     <ul id="text-hedgehog">
@@ -65,9 +71,11 @@
                             <p>Mammal</p>
                         </li>
                         <li>
-                            <p>They would be great at triathlon, if you switched cycling for climbing : Hedgehogs are
+                            <p>
+                            They would be great at triathlon, if you switched cycling for climbing : Hedgehogs are
                                 good
-                                runners, proficient climbers and can even swim</p>
+                                runners, proficient climbers and can even swim
+                        </p>
                         </li>
                     </ul>
                 </div>
@@ -80,16 +88,18 @@
         <div>
             <article class="result">
                 <h3>Well done playername!</h3>
-                <span id="scoreFinal">points</span>
-                <button class="buttontryagain" type="button" onclick="afficherBienvenue()">Try Again</button>
+                <p> <span id="scoreFinal"></span>points</p>
+                <button id="resetButton" class="buttontryagain" type="button">Try Again</button>
             </article>
         </div>
 
     </main>
-    <footer>
-        <p>copyright</p>
-    </footer>
 
+<footer>
+    <p>copyright</p>
+</footer>
+<script src="script.js"></script>
+<script src="javascript/welcome.js"></script>
 </body>
 
 </html>
