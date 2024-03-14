@@ -207,8 +207,8 @@ footer p {
 #article {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-start;
     max-width: 80%;
     gap: 1.5rem;
 }
@@ -260,6 +260,7 @@ footer p {
     grid-area: 2/2/3/3;
     border-radius: 2rem;
     background-color: var(--main-color-green);
+
 }
 
 #article>#quizz>#quizz-hedgehog>#answer-squirrel {
@@ -282,8 +283,8 @@ footer p {
 
 #article>#description {
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
     width: 80%;
     background-color: var(--secondary-color-grey);
     border-radius: 0.5rem;
@@ -295,6 +296,8 @@ footer p {
     width: auto;
     height: 5rem;
     padding: 0.25rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #article>#description>ul {
@@ -309,6 +312,15 @@ footer p {
 
 #article>#description>ul>li>p {
     font-size: 0.5rem;
+}
+
+#article>#description {
+    display: none;
+}
+
+#article>#description>ul>li>p {
+    font-size: 0.5rem;
+
 }
 
 /* ------------------- MEDIA QUERIES ----------------------- */
@@ -362,4 +374,23 @@ footer p {
     #avatar {
         height: 11em;
     }
+
+    /*--------------modification pour compléter le code--------------*/
+
+
+    #article {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .result {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
 }
