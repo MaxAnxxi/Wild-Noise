@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta type="description" content="An audio quizz about Wild Animals">
     <link rel="stylesheet" href="style.css">
-    <link type="script" href="script.js">
     <title>Quizz Wild Noise</title>
 </head>
 
@@ -39,7 +38,6 @@
                     <span id="messageErreur"></span>
                     <button class="buttonstart" type="button" onclick="afficherBienvenue()">Start</button>
                 </form>
-                <script src="script.js"> playername(pseudo) </script>
             </article>
         </section>
         <h2>Quizz</h2>
@@ -50,11 +48,17 @@
 
                     <audio src="./assets/audio/ANMLMisc_Cri d un jeune herisson (ID 0941)_LS.mp3" type="audio/mp3"
                         controls id="audio-hedgehog"></audio>
-                    <button id="answer-hedgehog" type="button">Hedgehog</button>
+                    <button id="answer-hedgehog" type="button" data-rep="correct">Hedgehog</button>
                     <button id="answer-squirrel" type="button">Squirrel</button>
                     <button id="answer-hamster" type="button">Hamster</button>
                     <button id="answer-beaver" type="button">Beaver</button>
                 </div>
+                <script src="javascript/trueFalse.js">
+
+                </script>
+
+
+
             </article>
             <article id="description">
                 <img id="img-hedgehog" alt="hedgehog" src="./assets/images/hedgehog-3703244_1280.jpg" />
@@ -78,13 +82,13 @@
         <section>
             <article class="result">
                 <h3>Well done playername!</h3>
-                <span id="scoreFinal">points</span>
+                <p> <span id="scoreFinal">0</span>points</p>
                 <button class="buttontryagain" type="button" onclick="afficherBienvenue()">Try Again</button>
             </article>
         </section>
 
     </main>
-    <script src="script.js"></script>
+
 
 </body>
 
