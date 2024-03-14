@@ -4,21 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta type="description" content="An audio quizz about Wild Animals">
+    <meta name="description" content="An audio quizz about Wild Animals">
     <link rel="stylesheet" href="style.css">
     <title>Quizz Wild Noise</title>
 </head>
 
 <body>
-
-
     <header>
         <div id="avatartitle">
-            <img src="assets/images/wildNoise_logo.png" alt="logo wild noise" id="avatar" />
+            <img src="./assets/images/wildNoise_logo.png" alt="logo-wild-noise" id="avatar">
             <h1>QUIZZ <br>
                 WILD NOISE</h1>
         </div>
-
         <nav>
             <ul>
                 <li>Rules</li>
@@ -26,9 +23,7 @@
                 <li>Contact</li>
             </ul>
         </nav>
-
     </header>
-
     <main>
         <h2>Welcome</h2>
         <section>
@@ -44,60 +39,59 @@
             </article>
         </section>
         <h2>Quizz</h2>
-        <section id="article">
-            <article id="quizz">
-                <h4>Guess the animal!</h4>
-                <div id="quizz-hedgehog">
+        <div id="article">
+            <div id="hedgehog">
+                <article class="quizz">
+                    <h4>Guess the animal!</h4>
+                    <div id="quizz-hedgehog">
 
-                    <audio src="./assets/audio/ANMLMisc_Cri d un jeune herisson (ID 0941)_LS.mp3" type="audio/mp3"
-                        controls id="audio-hedgehog"></audio>
-                    <button id="answer-hedgehog" type="button" data-rep="correct">Hedgehog</button>
-                    <button id="answer-squirrel" type="button">Squirrel</button>
-                    <button id="answer-hamster" type="button">Hamster</button>
-                    <button id="answer-beaver" type="button">Beaver</button>
-                </div>
-                <script src="javascript/trueFalse.js">
-
-                </script>
-
-
-
+                        <audio src="./assets/audio/hedgehog.mp3" controls id="audio-hedgehog"></audio>
+                        <button id="answer-hedgehog" type="button" class="button-quizz" data-rep="correct">Hedgehog</button>
+                        <button id="answer-squirrel" type="button" class="button-quizz">Squirrel</button>
+                        <button id="answer-hamster" type="button" class="button-quizz">Hamster</button>
+                        <button id="answer-beaver" type="button" class="button-quizz">Beaver</button>
+                    </div>
             </article>
-            <article id="description">
-                <img id="img-hedgehog" alt="hedgehog" src="./assets/images/hedgehog-3703244_1280.jpg" />
-                <ul id="description-hedgehog">
-                    <li>
-                        <p>Hedgehog</p>
-                    </li>
-                    <li>
-                        <p>Mammal</p>
-                    </li>
-                    <li>
-                        <p>
-                            They would be great at triathlon, if you switched cycling for climbing : Hedgehogs are good
-                            runners, proficient climbers and can even swim
+                <div id="description-hedgehog">
+                    <img id="img-hedgehog" alt="hedgehog" src="./assets/images/hedgehog-3703244_1280.jpg">
+                    <ul id="description-hedgehog">
+                        <li>
+                            <p>Hedgehog</p> 
+                        </li>
+                        <li>
+                            <p>Mammal</p>
+                        </li>
+                        <li>
+                            <p>
+                            They would be great at triathlon, if you switched cycling for climbing : Hedgehogs are
+                                good
+                                runners, proficient climbers and can even swim
                         </p>
-                    </li>
-                </ul>
-            </article>
-        </section>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <h2>Result</h2>
 
-        <section>
+        <div>
             <article class="result">
                 <h3>Well done playername!</h3>
                 <p> <span id="scoreFinal"></span>points</p>
                 <button id="resetButton" class="buttontryagain" type="button">Try Again</button>
             </article>
-        </section>
+        </div>
 
     </main>
-    <script src="javascript/welcome.js"></script>
-</body>
 
 <footer>
     <p>copyright</p>
 </footer>
+<script src="javascript/showdescription.js"></script>
+<script src="javascript/welcome.js"></script>
+<script src="/javascript/timerSlide.js"></script>
+<script src="javascript/trueFalse.js"></script>
+</body>
 
 </html>

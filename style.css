@@ -204,16 +204,26 @@ footer p {
 
 /*------------------------------------- Section QUIZZ ------------------------------*/
 
-#article {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
+#article{
+    display: grid;
+    align-items: flex-start;
+    justify-content: center;
     max-width: 80%;
     gap: 1.5rem;
 }
 
-#article>#quizz {
+
+/* ------------------------------------- Hedgehog PART ------------------------------- */
+
+#article > #hedgehog {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 0;
+    grid-area: 1/1/2/2;
+}
+
+#article > #hedgehog > .quizz {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -223,12 +233,12 @@ footer p {
     gap: 1.5rem;
 }
 
-#article>#quizz>h4 {
-    color: var(--main-color-green);
+#article > #hedgehog > .quizz > h4{
+    color:var(--main-color-green);
     font-size: 1rem;
 }
 
-#article>#quizz>#quizz-hedgehog {
+#article > #hedgehog > .quizz > #quizz-hedgehog{
     display: grid;
     grid-template-columns: 1fr 4fr 4fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
@@ -238,8 +248,7 @@ footer p {
     padding: 0.25rem;
     width: 80%;
 }
-
-#article>#quizz>#quizz-hedgehog>#audio-hedgehog {
+#article > #hedgehog > .quizz > #quizz-hedgehog > #audio-hedgehog{
     grid-area: 1/2/2/4;
     max-width: 80%;
     justify-self: center;
@@ -249,39 +258,39 @@ footer p {
 
 }
 
-#article>#quizz>#quizz-hedgehog>button {
+#article > #hedgehog > .quizz > #quizz-hedgehog > button{
     justify-self: center;
     align-self: center;
     height: 50%;
     width: 100%;
 }
 
-#article>#quizz>#quizz-hedgehog>#answer-hedgehog {
+#article > #hedgehog > .quizz > #quizz-hedgehog > #answer-hedgehog{
     grid-area: 2/2/3/3;
     border-radius: 2rem;
     background-color: var(--main-color-green);
 
 }
 
-#article>#quizz>#quizz-hedgehog>#answer-squirrel {
+#article > #hedgehog > .quizz > #quizz-hedgehog > #answer-squirrel{
     grid-area: 2/3/3/4;
     border-radius: 2rem;
     background-color: var(--main-color-green);
 }
 
-#article>#quizz>#quizz-hedgehog>#answer-beaver {
+#article > #hedgehog > .quizz > #quizz-hedgehog > #answer-beaver{
     grid-area: 3/2/4/3;
     border-radius: 2rem;
     background-color: var(--main-color-green);
 }
 
-#article>#quizz>#quizz-hedgehog>#answer-hamster {
+#article > #hedgehog > .quizz > #quizz-hedgehog > #answer-hamster{
     grid-area: 3/3/4/4;
     border-radius: 2rem;
     background-color: var(--main-color-green);
 }
 
-#article>#description {
+#article > #hedgehog > #description-hedgehog{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -292,7 +301,7 @@ footer p {
     height: 10rem;
 }
 
-#article>#description>#img-hedgehog {
+#article > #hedgehog > #description-hedgehog > #img-hedgehog {
     width: auto;
     height: 5rem;
     padding: 0.25rem;
@@ -300,21 +309,21 @@ footer p {
     align-items: center;
 }
 
-#article>#description>ul {
+#article > #hedgehog > #description-hedgehog > ul{
     list-style-type: none;
     font-size: 0.5rem;
     max-width: 40%;
 }
 
-#article>#description>ul>li {
+#article > #hedgehog > #description-hedgehog > ul > li{
     padding: 0.25rem;
 }
 
-#article>#description>ul>li>p {
+#article > #hedgehog > #description-hedgehog > ul > li > p{
     font-size: 0.5rem;
 }
 
-#article>#description {
+#article> #hedgehog >#description-hedgehog {
     display: none;
 }
 
@@ -378,7 +387,7 @@ footer p {
     /*--------------modification pour compléter le code--------------*/
 
 
-    #article {
+    #article > #hedgehog {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -387,10 +396,5 @@ footer p {
 
     }
 
-    .result {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-    }
 
 }
