@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    
+
     <header>
         <div id="avatartitle">
-            <img src="assets/images/wildNoise_logo.png" alt="logo wild noise" id="avatar"/>
+            <img src="assets/images/wildNoise_logo.png" alt="logo wild noise" id="avatar" />
             <h1>QUIZZ <br>
                 WILD NOISE</h1>
         </div>
@@ -31,15 +31,16 @@
 
     <main>
         <h2>Welcome</h2>
-        <section id="form">
+        <section>
+            <h3 id="label">Who are you?</h3>
             <article class="box">
                 <form>
-                    <p>Who are you?</p>
-                    <input type="text" name="message" id="pseudo">
-                    <span id="messageErreur"></span>
-                    <button class="buttonstart" type="button" onclick="afficherBienvenue()">Start</button>
+                    <div id="name"></div>
+                    <div id="formrep">
+                        <input type="text" name="pseudo" class="champ" id="pseudo">
+                        <button id="myButton" class="buttonstart" type="button">Start</button>
+                    </div>
                 </form>
-                <script src="script.js"> playername(pseudo) </script>
             </article>
         </section>
         <h2>Quizz</h2>
@@ -78,14 +79,13 @@
         <section>
             <article class="result">
                 <h3>Well done playername!</h3>
-                <span id="scoreFinal">points</span>
-                <button class="buttontryagain" type="button" onclick="afficherBienvenue()">Try Again</button>
+                <p> <span id="scoreFinal"></span>points</p>
+                <button id="resetButton" class="buttontryagain" type="button">Try Again</button>
             </article>
         </section>
 
     </main>
-    <script src="script.js"></script>
-
+    <script src="javascript/welcome.js"></script>
 </body>
 
 <footer>
