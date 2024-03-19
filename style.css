@@ -67,11 +67,11 @@ a {
     color: black;
 }
 
-p,
+/* p,
 button,
 a {
-    /* font-size: 1em; */
-}
+    /* font-size: 1em; 
+} */
 
 
 /* header  */
@@ -213,7 +213,31 @@ footer p {
 }
 
 
+
+
 /* ------------------------------------- Hedgehog PART ------------------------------- */
+
+.button-quizz{
+    background-color: var(--third-color-yellow);
+    border-radius: 2rem;
+    justify-self: center;
+    align-self: center;
+    height: 50%;
+    width: 100%;
+}
+
+
+.goodanswer {
+    background-color: #689D71;
+    border: none;
+}
+
+.badanswer {
+    background-color: #B3575C;
+    border: none;
+}
+
+
 
 #article > #hedgehog {
     display: flex;
@@ -258,37 +282,26 @@ footer p {
 
 }
 
-#article > #hedgehog > .quizz > #quizz-hedgehog > button{
-    justify-self: center;
-    align-self: center;
-    height: 50%;
-    width: 100%;
-}
 
 #article > #hedgehog > .quizz > #quizz-hedgehog > #answer-hedgehog{
     grid-area: 2/2/3/3;
-    border-radius: 2rem;
-    background-color: var(--main-color-green);
 
 }
 
 #article > #hedgehog > .quizz > #quizz-hedgehog > #answer-squirrel{
     grid-area: 2/3/3/4;
-    border-radius: 2rem;
-    background-color: var(--main-color-green);
 }
 
 #article > #hedgehog > .quizz > #quizz-hedgehog > #answer-beaver{
     grid-area: 3/2/4/3;
-    border-radius: 2rem;
-    background-color: var(--main-color-green);
 }
 
 #article > #hedgehog > .quizz > #quizz-hedgehog > #answer-hamster{
     grid-area: 3/3/4/4;
-    border-radius: 2rem;
-    background-color: var(--main-color-green);
 }
+
+
+
 
 #article > #hedgehog > #description-hedgehog{
     display: flex;

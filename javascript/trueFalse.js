@@ -8,16 +8,18 @@ const question1 = [
 function correctorbad(tableaubouton) {
     tableaubouton.forEach((answer) => answer.addEventListener("click", () => { 
         if (answer.dataset.rep === "correct" ) {
-            answer.style.backgroundColor = "green";
+            answer.classList.add('goodanswer'); 
         }
     
         else {
-            answer.style.backgroundColor = "red";
+            answer.classList.add("badanswer");
 
         }
 
-    }))
-    }
+        tableaubouton.forEach((bouton) => bouton.disabled = true);
+
+    }));
+    };
 
 
 correctorbad(question1);
