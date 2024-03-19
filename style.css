@@ -17,7 +17,7 @@
     --main-color-green: #D4EED3;
     --secondary-color-grey: #97ABB1;
     --third-color-yellow: #EDEBA0;
-
+    --fourth-color-darkgray: #746F72;
     --main-typo: "NotoSansMono";
 }
 
@@ -57,6 +57,10 @@ h2 {
 h2,
 h3 {
     color: var(--main-color-green);
+}
+
+h2 {
+    text-decoration: underline var(--main-color-green);
 }
 
 p,
@@ -168,6 +172,7 @@ input {
     align-items: center;
     justify-content: center;
     padding: 2em;
+    gap: 1.5em;
 }
 
 span {
@@ -204,7 +209,7 @@ footer p {
 
 /*------------------------------------- Section QUIZZ ------------------------------*/
 
-#article{
+#article {
     display: grid;
     align-items: flex-start;
     justify-content: center;
@@ -215,7 +220,7 @@ footer p {
 
 /* ------------------------------------- Hedgehog PART ------------------------------- */
 
-#article > #hedgehog {
+#article>#hedgehog {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -223,7 +228,7 @@ footer p {
     grid-area: 1/1/2/2;
 }
 
-#article > #hedgehog > .quizz {
+#article>#hedgehog>.quizz {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -233,12 +238,12 @@ footer p {
     gap: 1.5rem;
 }
 
-#article > #hedgehog > .quizz > h4{
-    color:var(--main-color-green);
+#article>#hedgehog>.quizz>h4 {
+    color: var(--main-color-green);
     font-size: 1rem;
 }
 
-#article > #hedgehog > .quizz > #quizz-hedgehog{
+#article>#hedgehog>.quizz>#quizz-hedgehog {
     display: grid;
     grid-template-columns: 1fr 4fr 4fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
@@ -248,7 +253,8 @@ footer p {
     padding: 0.25rem;
     width: 80%;
 }
-#article > #hedgehog > .quizz > #quizz-hedgehog > #audio-hedgehog{
+
+#article>#hedgehog>.quizz>#quizz-hedgehog>#audio-hedgehog {
     grid-area: 1/2/2/4;
     max-width: 80%;
     justify-self: center;
@@ -258,39 +264,39 @@ footer p {
 
 }
 
-#article > #hedgehog > .quizz > #quizz-hedgehog > button{
+#article>#hedgehog>.quizz>#quizz-hedgehog>button {
     justify-self: center;
     align-self: center;
     height: 50%;
     width: 100%;
 }
 
-#article > #hedgehog > .quizz > #quizz-hedgehog > #answer-hedgehog{
+#article>#hedgehog>.quizz>#quizz-hedgehog>#answer-hedgehog {
     grid-area: 2/2/3/3;
     border-radius: 2rem;
     background-color: var(--main-color-green);
 
 }
 
-#article > #hedgehog > .quizz > #quizz-hedgehog > #answer-squirrel{
+#article>#hedgehog>.quizz>#quizz-hedgehog>#answer-squirrel {
     grid-area: 2/3/3/4;
     border-radius: 2rem;
     background-color: var(--main-color-green);
 }
 
-#article > #hedgehog > .quizz > #quizz-hedgehog > #answer-beaver{
+#article>#hedgehog>.quizz>#quizz-hedgehog>#answer-beaver {
     grid-area: 3/2/4/3;
     border-radius: 2rem;
     background-color: var(--main-color-green);
 }
 
-#article > #hedgehog > .quizz > #quizz-hedgehog > #answer-hamster{
+#article>#hedgehog>.quizz>#quizz-hedgehog>#answer-hamster {
     grid-area: 3/3/4/4;
     border-radius: 2rem;
     background-color: var(--main-color-green);
 }
 
-#article > #hedgehog > #description-hedgehog{
+#article>#hedgehog>#description-hedgehog {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -301,7 +307,7 @@ footer p {
     height: 10rem;
 }
 
-#article > #hedgehog > #description-hedgehog > #img-hedgehog {
+#article>#hedgehog>#description-hedgehog>#img-hedgehog {
     width: auto;
     height: 5rem;
     padding: 0.25rem;
@@ -309,21 +315,21 @@ footer p {
     align-items: center;
 }
 
-#article > #hedgehog > #description-hedgehog > ul{
+#article>#hedgehog>#description-hedgehog>ul {
     list-style-type: none;
     font-size: 0.5rem;
     max-width: 40%;
 }
 
-#article > #hedgehog > #description-hedgehog > ul > li{
+#article>#hedgehog>#description-hedgehog>ul>li {
     padding: 0.25rem;
 }
 
-#article > #hedgehog > #description-hedgehog > ul > li > p{
+#article>#hedgehog>#description-hedgehog>ul>li>p {
     font-size: 0.5rem;
 }
 
-#article> #hedgehog >#description-hedgehog {
+#article>#hedgehog>#description-hedgehog {
     display: none;
 }
 
@@ -387,7 +393,7 @@ footer p {
     /*--------------modification pour compléter le code--------------*/
 
 
-    #article > #hedgehog {
+    #article>#hedgehog {
         display: flex;
         flex-direction: row;
         justify-content: center;
