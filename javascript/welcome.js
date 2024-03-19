@@ -10,6 +10,7 @@ function playerName() {
         dname.innerText = "Hello " + balisePseudo.value + "!";
         dname.style.fontSize = "15px";
         pseudoForm.style.display = "none";
+
     });
 
     resetButton.addEventListener("click", (event) => {
