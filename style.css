@@ -67,11 +67,11 @@ a {
     color: black;
 }
 
-p,
+/* p,
 button,
 a {
-    /* font-size: 1em; */
-}
+    font-size: 1em;
+} */
 
 
 /* header  */
@@ -324,7 +324,7 @@ footer p {
 }
 
 #article> #hedgehog >#description-hedgehog {
-    display: none;
+    display: flex;
 }
 
 #article>#description-hedgehog>ul>li>p {
