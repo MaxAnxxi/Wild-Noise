@@ -23,7 +23,10 @@ elt.maxLength = 10;
 
 //*------------------- score ---------------*//
 const reponses = [
-    document.getElementById("answer-hedgehog")
+    document.getElementById("answer-hedgehog"),
+    document.getElementById("answer-squirrel"),
+    document.getElementById("answer-hamster"),
+    document.getElementById("answer-beaver")
 ];
 
 function score() {
