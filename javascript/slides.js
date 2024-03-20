@@ -19,7 +19,7 @@ const animalSound = document.getElementById("audio-hedgehog");
 const animalImg = document.getElementById("img-hedgehog");
 
 function createSlide(){
-    for(let i =0 ; i < animals.length;i++){
+    for(let i =0 ; i < animals.length-1;i++){
         for (let j = 0; j < buttonQuizz.length; j++) {
             buttonQuizz[j].addEventListener('click', () => {
                 setTimeout(() => {
@@ -32,7 +32,7 @@ function createSlide(){
                     buttonQuizz[1].textContent=animals[i].answer2;
                     buttonQuizz[2].textContent=animals[i].answer3;
                     buttonQuizz[3].textContent=animals[i].answer4;
-                    buttonQuizz[j].style.backgroundColor = "#D4EED3";
+                    // buttonQuizz[j].style.backgroundColor = "#D4EED3";
                     listAnimal[0].textContent=animals[i].name;
                     listAnimal[1].textContent=animals[i].family;
                     listAnimal[2].textContent=animals[i].funfact;
@@ -45,8 +45,11 @@ function createSlide(){
                             buttonQuizz[k].removeAttribute("data-rep");
                             console.log("Bad Answer");
                         }
+                    break;
                     }
+
                     }
+                    
         , 3000);
                 
             })
