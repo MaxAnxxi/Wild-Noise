@@ -1,5 +1,3 @@
-const test = [1, 2, 3, 4];
-console.log(test.length);
 
   function shuffle(array) {
     for (let i = array.length-1; i > 0; i--) {
@@ -11,6 +9,3 @@ console.log(test.length);
     return array
 }
 
-  
-
- console.log(shuffle(test));
