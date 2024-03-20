@@ -5,14 +5,15 @@ const question1 = [
     document.getElementById("answer-beaver")
 ]
 
+
 function correctorbad(tableaubouton) {
     tableaubouton.forEach((answer) => answer.addEventListener("click", () => { 
         if (answer.dataset.rep === "correct" ) {
-            answer.classList.add('goodanswer'); 
+            answer.classList.toggle('goodanswer'); 
         }
     
         else {
-            answer.classList.add("badanswer");
+            answer.classList.toggle("badanswer");
 
         }
 
