@@ -95,10 +95,12 @@ const answer = [
 ]
 const description = document.getElementById("description-hedgehog");
 let questionNumber = 0;
+
+shuffle(animals);
+
 function createSlide() {
     for (let j = 0; j < buttonQuizz.length; j++) {
         description.style.display = "flex";
-        shuffle(animals);
         for (let i = questionNumber; i < animals.length; i++) {
             setTimeout(() => {
                 answer.forEach((button) => {
