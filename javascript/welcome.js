@@ -1,3 +1,4 @@
+//*------------------- player ---------------*//
 function playerName() {
     let balisePseudo = document.getElementById("pseudo");
     let baliseButton = document.getElementById("myButton");
@@ -10,6 +11,7 @@ function playerName() {
         dname.innerText = "Hello " + balisePseudo.value + "!";
         dname.style.fontSize = "15px";
         pseudoForm.style.display = "none";
+
     });
 
     resetButton.addEventListener("click", (event) => {
@@ -20,3 +22,27 @@ playerName();
 
 let elt = document.querySelector('input');
 elt.maxLength = 10;
+
+//*------------------- score ---------------*//
+
+const reponses = [
+    document.getElementById("answer-hedgehog")
+];
+
+function score() {
+    let result = 0;
+    let scoreElement = document.getElementById("score");
+
+
+    reponses.forEach((reponse) => {
+        reponse.addEventListener("click", () => {
+            if (reponse.dataset.rep === "correct") {
+                result++;
+                scoreElement.textContent = result;
+            } else {
+
+            }
+        });
+    });
+}
+score();

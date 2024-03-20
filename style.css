@@ -17,7 +17,7 @@
     --main-color-green: #D4EED3;
     --secondary-color-grey: #97ABB1;
     --third-color-yellow: #EDEBA0;
-
+    --fourth-color-darkgray: #746F72;
     --main-typo: "NotoSansMono";
 }
 
@@ -59,6 +59,10 @@ h3 {
     color: var(--main-color-green);
 }
 
+h2 {
+    text-decoration: underline var(--main-color-green);
+}
+
 p,
 li,
 button,
@@ -67,12 +71,12 @@ a {
     color: black;
 }
 
-p,
+/* p,
 button,
 a {
-    /* font-size: 1em; */
+    font-size: 1em;
 }
-
+*/
 
 /* header  */
 
@@ -168,6 +172,7 @@ input {
     align-items: center;
     justify-content: center;
     padding: 2em;
+    gap: 1.5em;
 }
 
 span {
@@ -213,7 +218,53 @@ footer p {
 }
 
 
+
+
 /* ------------------------------------- Hedgehog PART ------------------------------- */
+
+.button-quizz{
+    background-color: var(--third-color-yellow);
+    border-radius: 2rem;
+    justify-self: center;
+    align-self: center;
+    height: 50%;
+    width: 100%;
+}
+
+
+.goodanswer {
+    background-color: #689D71;
+    border: none;
+}
+
+.badanswer {
+    background-color: #B3575C;
+    border: none;
+}
+
+
+
+.button-quizz{
+    background-color: var(--third-color-yellow);
+    border-radius: 2rem;
+    justify-self: center;
+    align-self: center;
+    height: 50%;
+    width: 100%;
+}
+
+
+.goodanswer {
+    background-color: #689D71;
+    border: none;
+}
+
+.badanswer {
+    background-color: #B3575C;
+    border: none;
+}
+
+
 
 #article>#hedgehog {
     display: flex;
@@ -268,28 +319,23 @@ footer p {
 
 #article>#hedgehog>.quizz>#quizz-hedgehog>#answer-hedgehog {
     grid-area: 2/2/3/3;
-    border-radius: 2rem;
-    background-color: var(--main-color-green);
 
 }
 
 #article>#hedgehog>.quizz>#quizz-hedgehog>#answer-squirrel {
     grid-area: 2/3/3/4;
-    border-radius: 2rem;
-    background-color: var(--main-color-green);
 }
 
 #article>#hedgehog>.quizz>#quizz-hedgehog>#answer-beaver {
     grid-area: 3/2/4/3;
-    border-radius: 2rem;
-    background-color: var(--main-color-green);
 }
 
 #article>#hedgehog>.quizz>#quizz-hedgehog>#answer-hamster {
     grid-area: 3/3/4/4;
-    border-radius: 2rem;
-    background-color: var(--main-color-green);
 }
+
+
+
 
 #article>#hedgehog>#description-hedgehog {
     display: flex;
