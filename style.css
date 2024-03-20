@@ -374,7 +374,8 @@ footer p {
     display: none;
 }
 
-#article>#description-hedgehog>ul>li>p {
+
+#description-hedgehog>ul>li>p {
     font-size: 0.5rem;
 
 }
@@ -442,6 +443,11 @@ footer p {
 
 
     }
+
+    #article>#hedgehog>#description-hedgehog>ul>li>p {
+        font-size: 0.7rem;
+    }
+
 
 
 }

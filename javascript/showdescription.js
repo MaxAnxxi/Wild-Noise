@@ -1,5 +1,16 @@
-function showImage(./assets/images / hedgehog - 3703244_1280.jpg) {
-    hiddenImage = document.getElementById("#article>#description");
-    hiddenImage.style.display = 'block'; // Modifie le style CSS pour afficher l'image
-}
+const bouton = [
+    document.getElementById("answer-hedgehog"),
+    document.getElementById("answer-squirrel"),
+    document.getElementById("answer-hamster"),
+    document.getElementById("answer-beaver"),
+]
 
+const description = document.getElementById("description-hedgehog");
+
+function showdescription(tableaubouton) {
+    tableaubouton.forEach((answer) => answer.addEventListener("click", () => {
+        description.style.display = "flex";
+    }))
+};
+
+showdescription(bouton);
