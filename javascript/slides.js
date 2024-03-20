@@ -38,51 +38,53 @@ const answer = [
     document.getElementById("answer-beaver")
 ]
 const description = document.getElementById("description-hedgehog");
-let questionNumber=0;
+let questionNumber = 0;
 function createSlide() {
     for (let j = 0; j < buttonQuizz.length; j++) {
         description.style.display = "flex";
         for (let i = questionNumber; i < animals.length; i++) {
-                setTimeout(() => {
-                    answer.forEach((button) => {
-                        button.disabled = false;
-                    });
-                    if (buttonQuizz[j].classList.contains("goodanswer")) {
-                        buttonQuizz[j].classList.remove("goodanswer");
+            setTimeout(() => {
+                answer.forEach((button) => {
+                    button.disabled = false;
+                });
+                if (buttonQuizz[j].classList.contains("goodanswer")) {
+                    buttonQuizz[j].classList.remove("goodanswer");
+                }
+                else {
+                    buttonQuizz[j].classList.remove("badanswer");
+                }
+                animalSound.pause();
+                animalSound.currentTime = 0;
+                animalSound.src = animals[i].sound;
+                animalImg.src = animals[i].img;
+                buttonQuizz[0].textContent = animals[i].answer1;
+                buttonQuizz[1].textContent = animals[i].answer2;
+                buttonQuizz[2].textContent = animals[i].answer3;
+                buttonQuizz[3].textContent = animals[i].answer4;
+                listAnimal[0].textContent = animals[i].name;
+                listAnimal[1].textContent = animals[i].family;
+                listAnimal[2].textContent = animals[i].funfact;
+                for (let k = 0; k < buttonQuizz.length; k++) {
+                    if (buttonQuizz[k].innerHTML === animals[i].name) {
+                        buttonQuizz[k].setAttribute("data-rep", "correct");
                     }
                     else {
-                        buttonQuizz[j].classList.remove("badanswer");
+                        buttonQuizz[k].removeAttribute("data-rep");
                     }
-                    animalSound.pause();
-                    animalSound.currentTime = 0;
-                    animalSound.src = animals[i].sound;
-                    animalImg.src = animals[i].img;
-                    buttonQuizz[0].textContent = animals[i].answer1;
-                    buttonQuizz[1].textContent = animals[i].answer2;
-                    buttonQuizz[2].textContent = animals[i].answer3;
-                    buttonQuizz[3].textContent = animals[i].answer4;
-                    listAnimal[0].textContent = animals[i].name;
-                    listAnimal[1].textContent = animals[i].family;
-                    listAnimal[2].textContent = animals[i].funfact;
-                    for (let k = 0; k < buttonQuizz.length; k++) {
-                        if (buttonQuizz[k].innerHTML === animals[i].name) {
-                            buttonQuizz[k].setAttribute("data-rep", "correct");
-                        }
-                        else {
-                            buttonQuizz[k].removeAttribute("data-rep");
-                        }
-                    }
-                    description.style.display = "none";
                 }
-                    , 3000);
+                description.style.display = "none";
+            }
+                , 3000);
             break;
-        }   
-    }   
+        }
+    }
 }
 
-for(let h=0; h<buttonQuizz.length;h++){
-    buttonQuizz[h].addEventListener('click', () =>{
+for (let h = 0; h < buttonQuizz.length; h++) {
+    buttonQuizz[h].addEventListener('click', () => {
         createSlide();
         questionNumber++;
     })
 }
+
+export { animals }
