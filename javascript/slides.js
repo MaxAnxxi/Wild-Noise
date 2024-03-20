@@ -41,6 +41,7 @@ const description = document.getElementById("description-hedgehog");
 let questionNumber=0;
 function createSlide() {
     for (let j = 0; j < buttonQuizz.length; j++) {
+        description.style.display = "flex";
         for (let i = questionNumber; i < animals.length; i++) {
                 setTimeout(() => {
                     answer.forEach((button) => {
