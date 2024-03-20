@@ -21,11 +21,19 @@ const animals = [
         answer3: "Marmot",
         answer4: "Otter",
     }
-    // {
-
-    // }
-
 ];
+
+    function shuffle(array) {
+        for (let i = array.length-1; i > 0; i--) {
+            let randomIndex = Math.floor(Math.random() * i);
+            let currentarray = array[i];
+            array[i] = array[randomIndex];
+            array[randomIndex] = currentarray;
+        }
+        return array
+    }
+
+
 const animalDescription = document.getElementById("text-hedgehog");
 const listAnimal = animalDescription.getElementsByTagName("li");
 const buttonQuizz = document.getElementsByClassName("button-quizz");
@@ -42,6 +50,7 @@ let questionNumber = 0;
 function createSlide() {
     for (let j = 0; j < buttonQuizz.length; j++) {
         description.style.display = "flex";
+        shuffle(animals);
         for (let i = questionNumber; i < animals.length; i++) {
             setTimeout(() => {
                 answer.forEach((button) => {
