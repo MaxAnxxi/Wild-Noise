@@ -4,12 +4,13 @@
     src: url(assets/fonts/NotoSansMono-VariableFont_wdth.ttf) format("opentype");
 }
 
+
 /* global */
 
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
 }
 
 :root {
@@ -19,20 +20,19 @@
     --fourth-color-darkgray: #746F72;
     --main-typo: "NotoSansMono";
 }
-
+body{
+    height: 100vh;
+}
 main {
     background-color: #746F72;
     width: 100%;
     min-width: 200px;
-}
-
-main {
+    height: 60vh;
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
+    justify-content: space-evenly;
 }
-
 
 h1,
 h2,
@@ -51,34 +51,17 @@ h2 {
     margin-top: 1em;
     margin-bottom: 0.5em;
     align-self: flex-start;
-    /* margin-left: 10%; */
+    margin-left: 10%;
 }
-
-
 
 h2,
 h3 {
     color: var(--main-color-green);
 }
 
-/* h2 {
+h2 {
     text-decoration: underline var(--main-color-green);
-} */
-
-p,
-li,
-button,
-a {
-    font-family: var(--main-typo);
-    color: black;
 }
-
-/* p,
-button,
-a {
-    font-size: 1em;
-}
-*/
 
 /* header  */
 
@@ -90,7 +73,6 @@ header {
 #avatar {
     height: 8em;
 }
-
 
 #avatartitle {
     display: flex;
@@ -110,42 +92,16 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul li a {
+nav>ul>li>a {
     text-decoration: none;
 }
 
-#milieu {
-    display: block;
-    background-color: var(--secondary-color-grey);
-    width: auto;
-    border-radius: 0.5em;
-    margin: 3em;
-    padding: 5em;
-}
-
-#h2-rules{
-    margin: auto;
-    padding: 1em; 
-    font-size: 2.5em;
-
-}
-
-#h3-rules {
+p,
+li,
+button,
+a {
+    font-family: var(--main-typo);
     color: black;
-    margin-top: 2.2em;
-    margin-bottom: 2.2em;
-    font-size: 1.6em;
-}
-
-#prules {
-    /* margin: 0.5em; */
-    font-weight: bold;
-    margin: 2em;
-    font-size: 1.2em;
-}
-
-#ulrules, li{
-    padding: 1em;
 }
 
 /* footer */
@@ -159,12 +115,28 @@ footer p {
     padding: 0.5em;
 }
 
-/* 
-* ------------------- MEDIA QUERIES ----------------------- */
+/*main */
+
+main > #text {
+    background-color: var(--secondary-color-grey);
+    width: 80vw;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+
+}
+
+main > #text > p {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+
 
 
 @media screen and (min-width: 992px) {
-
     /* global */
 
     #formrep {
@@ -206,4 +178,9 @@ footer p {
         height: 11em;
     }
 
+    main > #text > p {
+        text-align: center;
+        font-size: 1.10rem;
+        padding: 0.5rem;
+    }
 }
