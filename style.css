@@ -463,3 +463,8 @@ footer p {
 
 
 }
+
+/*-----modif about us*/
+#header>#nav>ul>#button>li {
+    background-color: #b629a1;
+}

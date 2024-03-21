@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An audio quizz about Wild Animals">
+    <link rel="stylesheet" href="nouvelles_pages.css">
+    <title>Quizz Wild Noise | Contact</title>
+    <link rel="shortcut icon" href="assets/images/wildNoise_logo.png" type="images/logo">
+</head>
+
+<body>
+    <header>
+        <div id="avatartitle">
+            <img src="./assets/images/wildNoise_logo.png" alt="logo-wild-noise" id="avatar">
+            <h1>QUIZZ <br>
+                WILD NOISE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact</h2>
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <div class="row">
+                <label class="required" for="name">Your name:</label><br />
+                <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                <span id="name_validation" class="error_message"></span>
+            </div>
+            <div class="row">
+                <label class="required" for="email">Your email:</label><br />
+                <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                <span id="email_validation" class="error_message"></span>
+            </div>
+            <div class="row">
+                <label class="required" for="message">Your message:</label><br />
+                <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                <span id="message_validation" class="error_message"></span>
+            </div>
+
+            <input id="submit_button" type="submit" value="Send email" />
+        </form>
+
+        <div>
+            <p>We are always at your disposal.</p>
+        </div>
+    </main>
+    <script src="contact.js"></script>
+
+    <footer>
+        <p>copyright</p>
+    </footer>
+    <script src="javascript/showdescription.js"></script>
+    <script src="javascript/welcome.js"></script>
+    <script src="javascript/timerSlide.js"></script>
+    <script src="javascript/trueFalse.js"></script>
+    <script src="javascript/shuffle.js"></script>
+    <script src="javascript/slides.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
