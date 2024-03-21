@@ -1,3 +1,9 @@
+/* typo */
+@font-face {
+    font-family: "NotoSansMono";
+    src: url(assets/fonts/NotoSansMono-VariableFont_wdth.ttf) format("opentype");
+}
+
 /* global */
 
 * {
