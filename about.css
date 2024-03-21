@@ -1,0 +1,181 @@
+/* typo */
+@font-face {
+    font-family: "NotoSansMono";
+    src: url(assets/fonts/NotoSansMono-VariableFont_wdth.ttf) format("opentype");
+}
+
+
+/* global */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color-green: #D4EED3;
+    --secondary-color-grey: #97ABB1;
+    --third-color-yellow: #EDEBA0;
+    --fourth-color-darkgray: #746F72;
+    --main-typo: "NotoSansMono";
+}
+body{
+    height: 100%;
+}
+main {
+    background-color: #746F72;
+    width: 100%;
+    min-width: 200px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--main-typo);
+    font-weight: bold;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    align-self: flex-start;
+    margin-left: 10%;
+}
+
+h2,
+h3 {
+    color: var(--main-color-green);
+}
+
+h2 {
+    text-decoration: underline var(--main-color-green);
+}
+
+/* header  */
+
+header {
+    background-color: var(--main-color-green);
+    padding: 1em;
+}
+
+#avatar {
+    height: 8em;
+}
+
+#avatartitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 2em;
+
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+}
+
+p,
+li,
+button,
+a {
+    font-family: var(--main-typo);
+    color: black;
+}
+
+/* footer */
+footer {
+    background-color: var(--main-color-green);
+    height: 100%;
+}
+
+footer p {
+    margin: auto;
+    text-align: center;
+    padding: 0.5em;
+}
+
+/*main */
+
+main > #text {
+    background-color: var(--secondary-color-grey);
+    width: 80vw;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+
+}
+
+main > #text > p {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+    /* global */
+
+    #formrep {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box {
+        display: flex;
+        min-width: 20em;
+    }
+
+    label {
+        min-width: 7.5em;
+        width: 15em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    /* header */
+
+    #avatartitle {
+        display: grid;
+        grid-template-columns: 10% 90%;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    nav li {
+        padding: 1em;
+    }
+
+
+    #avatar {
+        height: 11em;
+    }
+}

@@ -105,8 +105,12 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
+    text-decoration: none;
 }
 
+nav>ul>li>a {
+    text-decoration: none;
+}
 
 /* formulaire */
 
