@@ -186,6 +186,7 @@ span {
     width: 6em;
     height: 2em;
     font-size: 1em;
+    visibility: hidden;
 }
 
 /* Welcome & Result */
@@ -222,7 +223,7 @@ footer p {
 
 /* ------------------------------------- Hedgehog PART ------------------------------- */
 
-.button-quizz{
+.button-quizz {
     background-color: var(--third-color-yellow);
     border-radius: 2rem;
     justify-self: center;
@@ -244,7 +245,7 @@ footer p {
 
 
 
-.button-quizz{
+.button-quizz {
     background-color: var(--third-color-yellow);
     border-radius: 2rem;
     justify-self: center;
