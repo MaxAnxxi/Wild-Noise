@@ -195,6 +195,13 @@ span {
 
 /* Welcome & Result */
 
+article>p>span {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
 
 /* footer */
 footer {

@@ -88,15 +88,15 @@ function conclusion() {
 
             if (result < numbertabl / 2) {
                 console.log("test1")
-                conclusionFinal.innerText = (balisePseudo.value + " Get out a bit more !");
+                conclusionFinal.innerText = ("Get out a bit more " + balisePseudo.value + " !");
             }
             if (result === numbertabl) {
                 console.log("test2")
-                conclusionFinal.innerText = (balisePseudo.value + " Is that you tarzan ???");
+                conclusionFinal.innerText = (balisePseudo.value + " !!! Is that you Tarzan ???");
             }
             if (result < numbertabl / 3) {
                 console.log("test2")
-                conclusionFinal.innerText = (balisePseudo.value + " Well done you're a certified parisian !");
+                conclusionFinal.innerText = ("Well done " + balisePseudo.value + " ! You're a certified parisian !");
             }
             if (nbclick === numbertabl) {
                 resetButton.style.visibility = "visible";
