@@ -58,6 +58,10 @@ nav ul {
     list-style-type: none;
 }
 
+nav>ul>li>a {
+    text-decoration: none;
+}
+
 
 /* Welcome & Result */
 
