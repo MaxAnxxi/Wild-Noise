@@ -222,7 +222,7 @@ footer p {
 
 /* ------------------------------------- Hedgehog PART ------------------------------- */
 
-.button-quizz{
+.button-quizz {
     background-color: var(--third-color-yellow);
     border-radius: 2rem;
     justify-self: center;
@@ -244,7 +244,7 @@ footer p {
 
 
 
-.button-quizz{
+.button-quizz {
     background-color: var(--third-color-yellow);
     border-radius: 2rem;
     justify-self: center;
@@ -450,4 +450,9 @@ footer p {
 
 
 
+}
+
+/*-----modif about us*/
+#header>#nav>ul>#button>li {
+    background-color: #b629a1;
 }
